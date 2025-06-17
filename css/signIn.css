@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #102B3Dff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #0d2d45;
+}
+
+header sub {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 60px;
+}
+
+.left-side {
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left-side h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.left-side p {
+    margin-top: 15px;
+    font-size: 13px;
+    max-width: 300px;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    border-radius: 15px;
+}
+
+.login h2 {
+    font-size: 28px;
+    color: #0d2d45;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #0d2d45;
+    margin-bottom: 40px;
+}
+
+.form-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.form-input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #333;
+}
+
+.form-input input::placeholder {
+    color: #bbb;
+}
+
+.form-input img {
+    margin-right: 10px;
+}
+
+.forgot-password {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    font-size: 13px;
+    color: #7f8c8d;
+    text-decoration: none;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #0d2d45;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-button:hover {
+    background-color: #2a4e68;
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.signup-link a {
+    color: #0d2d45;
+    text-decoration: none;
+    font-weight: bold;
+}

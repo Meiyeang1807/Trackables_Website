@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <header>
+        <img src="image/logo-Trackables.png" alt="Trackables Logo" width="118">
+        <h1>Trackables</h1>
+        <sub>Sign Up</sub>
+        <link rel="stylesheet" href="css/signUp.css">
+    </header>
+
+    <div class="container">
+        <div class="left-side">
+            <img src="image/lost-and-found.png" alt="Lost and Found" width="380">
+            <h2>Create an account</h2>
+        </div>
+
+        <div class="right-side">
+            <form action="php/signUp.php" method="POST">
+                <div class="form-input">
+                    <input type="email" name="email" placeholder="Student/staff email ID" required>
+                </div>
+                <div class="form-input">
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-input">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="signup-button">Sign Up</button>
+            </form>
+
+            <div class="footer">
+                <p>Existing member? <a href="signIn.html">Log in here</a></p>
+                <img src="image/logo-Trackables.png" alt="Trackables Logo" width="60">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

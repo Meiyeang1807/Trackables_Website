@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="css/signIn.css">
+</head>
+<body>
+    <header>
+        <img src="image/logo-Trackables.png" alt="Trackables Logo" width="118">
+        <h1>Trackables</h1>
+        <sub>Log In</sub>
+    </header>
+
+    <div class="container">
+        <div class="left-side">
+            <img src="image/logo-Trackables.png" alt="Trackables Logo" width="380">
+            <h2>Trackables</h2>
+            <p>Easily report, find, and recover lost items on campus. Stay connected with the entire university community.</p>
+        </div>
+
+        <div class="right-side">
+            <div class="login">
+                <h2>Log In</h2>
+                <p>Hi, Enter your details to get sign in to your account</p>
+
+                <form action="php/signIn.php" method="POST">
+                    <div class="form-input">
+                        <img src="image/Mail.png" alt="Mail Icon" width="20">
+                        <input type="email" name="email" placeholder="Enter student/staff email ID" required>
+                    </div>
+                    <div class="form-input">
+                        <img src="image/Key.png" alt="Key Icon" width="20">
+                        <input type="password" name="password" placeholder="Enter password" required>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="resetPassword.html">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="login-button">Log In</button>
+                </form>
+
+                <p class="signup-link">New to Trackables? <a href="signUp.html">Sign Up</a></p>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

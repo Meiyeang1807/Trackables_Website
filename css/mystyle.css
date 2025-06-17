@@ -1,0 +1,131 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+
+  header img {
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  header h1 {
+    font-size: 24px;
+    color: #000
+  }
+
+  header a {
+    margin-right: auto;
+    color: #7a8b9b;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .container {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 0px;
+    margin: 200px 500px;
+    background-color: #102B3Dff;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+
+
+
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #102B3D;
+  }
+
+  .left img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  
+  .left h2 {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#102B3D;
+  }
+
+
+  .right input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .right input::placeholder {
+    color: #aaa;
+  }
+
+  .right .signup-btn {
+    background-color: #fff;
+    color: #102B3D;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .right .signup-btn:hover {
+    background-color: #ddd;
+  }
+
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 14px;
+    padding: 40px;
+  }
+
+  .login-link a {
+
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #102B3D;
+    color: #fff;
+  }
+

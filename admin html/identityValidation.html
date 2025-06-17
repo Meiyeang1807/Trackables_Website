@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Identity Validation - Trackable</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f2f4f7;
+    }
+
+    .sidebar {
+      height: 100vh;
+      width: 250px;
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      box-sizing: border-box;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .sidebar h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      margin-bottom: 25px;
+      transition: color 0.2s ease;
+    }
+
+    .sidebar a:hover {
+      color: #3498db;
+    }
+
+    .main-content {
+      margin-left: 250px;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .dashboard-section {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .dashboard-section h3 {
+      margin-bottom: 16px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table thead {
+      background-color: #34495e;
+      color: white;
+    }
+
+    table th, table td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    table tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .status-pending {
+      background-color: #f1c40f;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+
+    .status-verified {
+      background-color: #2ecc71;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h1>Admin Panel</h1>
+    <a href="dashboardOverview.html">Dashboard Overview</a>
+    <a href="manageUser.html">Manage Users</a>
+    <a href="identityValidation.html">Identity Validation</a>
+    <a href="adminLogin.html">Logout</a>
+  </div>
+
+  <div class="main-content">
+    <div class="dashboard-section">
+      <h3>Identity Validation</h3>
+      <p>Below is the list of identity information submitted by claimers. Admin can verify authenticity to prevent fraudulent claims.</p>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Claimer Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Matric Number</th>
+            <th>Item Claimed</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ahmad Rafi</td>
+            <td>rafi123@gmail.com</td>
+            <td>017-1234567</td>
+            <td>D032310258</td>
+            <td>Black Wallet</td>
+            <td><span class="status-pending">Pending</span></td>
+          </tr>
+          <tr>
+            <td>Siti Hajar</td>
+            <td>siti.hajar@email.com</td>
+            <td>013-8765432</td>
+            <td>D032310259</td>
+            <td>Samsung Earbuds</td>
+            <td><span class="status-verified">Verified</span></td>
+          </tr>
+          <!-- More identity entries here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

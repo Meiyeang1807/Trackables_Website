@@ -1,0 +1,211 @@
+/* Reset & Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+}
+
+/* Top Navigation */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px 40px;
+  background-color: #0F2B3D;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-top: -112px;
+  margin-left: -10px;
+  padding: 0;
+  font-size: 14px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Profile icon on top nav */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  margin-top: -120px;
+  margin-right: -10px; 
+}
+
+.profile img {
+  width: 27px;
+  margin-top: -8px;
+  margin-left:-1px; 
+  font-size: 16px;
+}
+
+/* Cover Banner Section */
+.profile-header {
+  padding-top: 40px;
+  padding-bottom: 0;
+  position: relative;
+  text-align: center;
+}
+
+.cover-banner {
+  width: 80%;
+  height: 120px;
+  margin: 0 auto;
+  margin-top: -100px;
+}
+
+
+.cover-banner img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/* Profile Picture */
+.profile-details {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+}
+
+/* Top Right Buttons */
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.edit-btn, .logout-btn {
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: white;
+  color: #0F2B3D;
+  border: 1px solid #0F2B3D;
+}
+
+.edit-btn a {
+  text-decoration: none;
+  color: #0F2B3D;
+}
+
+.logout-btn {
+  background-color: #0F2B3D;
+  color: white;
+}
+
+.logout-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-bottom: 2px solid #ccc;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  padding: 15px 40px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #444;
+}
+
+.tabs .active {
+  border-bottom: 3px solid #0F2B3D;
+  font-weight: bold;
+  color: #0F2B3D;
+}
+
+/* Posts */
+.post {
+  padding: 30px 50px;
+}
+
+.user-post {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.user-post img.profile-pic {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.user-post p {
+  margin: 0 0 10px;
+  font-size: 15px;
+  color: #222;
+}
+
+.user-post .date {
+    font-size: 10px;
+    color : grey;
+}
+
+
+.bag-photo {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-top: 10px;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+
+
+.profile-left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.description h2, .description p {
+  margin: 0;
+  color: #222;
+  font-size: 17px;
+}
